@@ -74,4 +74,16 @@ console.log(shirt, pants, shoes)
 console.log(shirt, pants)
 console.log("----------");
 
+//Example 4. spread Operator
+
+
+console.log("Example 4: Spread Operator");
+
+var class1 = ["James", "Jimmy", "Jared"]
+var class2 = ["Khiley", "Alissa"]
+var together = [...class1, ...class2]
+
+console.log(together.join(','))
+console.log("----------");
+
 export default App;
