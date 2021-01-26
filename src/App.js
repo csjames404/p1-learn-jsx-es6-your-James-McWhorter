@@ -48,4 +48,30 @@ function  myClass2 (name = "Gerald Hopkins", subject = "science"){
 myClass2();
 
 
+//Example 2. Arrow functions
+ console.log("Example 2: Arrow Functions");
+
+var sentence = function (name){
+	return `${name} of Valdosta`
+}
+console.log("sentence is an arrow function")
+console.log( sentence("Langdale"))
+console.log( sentence("Lowndes"))
+console.log("----------");
+
+
+//Example 3. Destruction assignment
+
+console.log("Example 3: Destruction Assignment");
+var outfit = {
+	shirt: "red shirt",
+	pants: "bluepants",
+	shoes: "Nike airmax",
+	extras : ["bookbag", "phone", "calculator"]
+}
+var {shirt, pants, shoes} = outfit
+console.log(shirt, pants, shoes)
+console.log(shirt, pants)
+console.log("----------");
+
 export default App;
