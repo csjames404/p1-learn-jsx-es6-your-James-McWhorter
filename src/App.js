@@ -24,6 +24,9 @@ function App() {
 }
 
 // Example 1: Default Parameters
+
+
+
 	console.log("Example 1: Default Parameters");
 var defaultStudent = {
 	name: {
@@ -33,13 +36,16 @@ var defaultStudent = {
 	favSubject: "math"
 }
 function  myClass (x = defaultStudent){
-	console.log('Use default');
-	console.log('The first student in my class is ${x.name.firstName} ${x.name.lastName} and his favorite subject is ${x.favSubject}..');
+	console.log(`Use default`);
+	console.log(`The first student in my class is ${x.name.firstName} ${x.name.lastName} and his favorite subject is ${x.favSubject}`);
 }
+myClass();
 function  myClass2 (name = "Gerald Hopkins", subject = "science"){
-	        console.log('Use parameters');
-	        console.log('The second student in my class is ${name} and his favorite subject is ${subject}..');
+	        console.log(`Use parameters`);
+	        console.log(`The second student in my class is ${name} and his favorite subject is ${subject}.`);
 		console.log("----------");
 }
+myClass2();
+
 
 export default App;
